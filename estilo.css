@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+div#links {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.f {
+  display: inline;
+  position: relative;
+  left: -45px;
+  bottom: -45px;
+}
+
+.logo {
+  display: block;
+  margin: 50px;
+  text-align: center;
+}
+
+.nav {
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 8px;
+  margin-bottom: 60px;
+}
+
+.traco {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 5px;
+  color: #ffffff;
+  background-color: red;
+  left: 80px;
+  text-align: left;
+}
+
+.geral {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+}
+
+.bike {
+  background-color: white;
+  text-align: right;
+  padding: 50px;
+}
+
+.ver-mais {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 12px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.nimbus {
+  font-size: 20px;
+}
+
+.foto {
+  width: 500px;
+  height: 387px;
+}
+
+.espec {
+  background-color: white;
+}
+
+.vantagens {
+  place-self: center;
+  text-align: end;
+  font-size: 52px;
+  padding-right: 50px;
+  color: #c7c7c7;
+}
+
+.espec {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+  padding-left: 120px;
+}
+
+footer {
+  font-size: 20px;
+  margin-top: 60px;
+  height: 70px;
+  padding-top: 40px;
+  text-align: center;
+  background-color: #fff;
+}
