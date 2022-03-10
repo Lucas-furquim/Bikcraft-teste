@@ -24,8 +24,16 @@ header {
   gap: 2rem;
 }
 
+li,
+ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
 nav {
-  display: flex;
+  display: grid;
   place-self: center;
 }
 
@@ -111,6 +119,9 @@ main {
 
 .bicicleta {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .vantagens {
@@ -121,7 +132,7 @@ main {
   align-self: center;
   background-image: url("img/onda.svg");
   background-repeat: repeat;
-  background-size: 1020px;
+  background-size: 990px;
 }
 
 .espec {
@@ -137,7 +148,6 @@ main {
   margin: 1rem;
   padding: 0rem 1rem;
   padding: 1rem;
-  border-left: 0.25rem solid white;
 }
 
 .espec-item:hover {
@@ -154,9 +164,86 @@ main {
 }
 
 footer {
-  display: grid;
+  display: inline-block;
   font-size: 1.4rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   text-align: center;
   padding: 2rem;
+}
+
+@media (max-width: 710px) {
+  body {
+    gap: 3rem;
+    display: block;
+  }
+
+  nav {
+    display: block;
+    place-self: stretch;
+  }
+
+  nav a {
+    margin: 1rem 0rem;
+  }
+
+  ul,
+  li,
+  a {
+    display: grid;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0rem;
+  }
+
+  .principal {
+    padding: 1.5rem;
+  }
+
+  .principal-p {
+    font-size: 1.7rem;
+  }
+
+  .vantagens {
+    padding: 1.5rem;
+    background-size: auto;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  .espec p {
+    font-size: 1.7rem;
+  }
+
+  .espec {
+    display: block;
+    grid-column: 1/-1;
+  }
+
+  .espec-item {
+    border-left: 0.25rem solid transparent;
+  }
+
+  footer {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .principal {
+    grid-column: 1/-1;
+  }
+
+  .principal-p {
+    text-align: justify;
+  }
+
+  .principal-titulo::before {
+    content: none;
+  }
+  .bicicleta {
+    grid-column: 1/-1;
+  }
 }
